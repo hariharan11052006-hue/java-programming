@@ -8,28 +8,28 @@ public class Solution {
 
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
-        int a =s.nextInt();
-        int b =s.nextInt();
+        int m =s.nextInt();
+        int n =s.nextInt();
         char c=s.next().charAt(0);
         switch(c){
                 case'+':
-                    float add=a+b;
+                    float add=m+n;
                     System.out.println("Addition of two number is " + add);
                     break;
                 case'-':
-                    float sub=a-b;
+                    float sub=m-n;
                     System.out.println("Subtraction of two number is " + sub);
                     break;
                 case'*':
-                    float mul=a*b;
+                    float mul=m*n;
                     System.out.println("Multiplication of two number is " + mul);
                     break;
                 case'/':
-                    float div=a/b;
+                    float div=m/n;
                     System.out.println("Division of two number is " + div);
                     break;
                 case'%':
-                    float mod=a%b;
+                    float mod=m%n;
                     System.out.println("Modulo of two number is " + mod);
                     break;
             default:
