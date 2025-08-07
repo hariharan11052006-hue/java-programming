@@ -8,9 +8,9 @@ public class Solution {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int b=sc.nextInt(), h=sc.nextInt();
-        int s1=sc.nextInt(), s2=sc.nextInt(), s3=sc.nextInt();
+        int a1=sc.nextInt(), a2=sc.nextInt(), a3=sc.nextInt();
         double area=0.5*b*h;
-        int peri=s1+s2+s3;
+        int peri=a1+a2+a3;
         System.out.printf("Area of Triangle is %.2f\n",area);
         System.out.printf("Perimeter of Triangle is %.2f\n",(float)peri);
     }
