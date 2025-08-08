@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner Armstrong = new Scanner(System.in);
+        int n = Armstrong.nextInt(),sum = 0, t = n;
+        if (n < 100 || n > 999)
+        { 
+            System.out.println("No");
+            return; 
+        }
+        while (t > 0)
+        {
+            int d = t % 10;
+            sum += d * d * d;
+            t /= 10;
+        }
+        System.out.println(sum == n ? "Yes" : "No");
+    }
+}
