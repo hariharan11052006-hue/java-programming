@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+    public static void main(String[] args) {
+        String s = new Scanner(System.in).nextLine();
+        boolean onlyDigits = true;
+        
+        for (char ch : s.toCharArray()) {
+            if (!Character.isDigit(ch)) {
+                onlyDigits = false;
+                break;
+            }
+        }        
+        if (onlyDigits) 
+            System.out.println("only digits");
+        else 
+            System.out.println("no");
+    }
+}
